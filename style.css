@@ -41,8 +41,7 @@ body{
   position:absolute;
   inset:0;
 
-  background:rgba(0,0,0,0.45);
-  backdrop-filter:blur(2px);
+  background:rgba(0,0,0,0.3);
 }
 
 /* CONTENT */
@@ -1185,3 +1184,68 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   animation-play-state: paused !important;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
+/* BUTTON */
+.open-btn,
+.flower-btn{
+  display:inline-block;
+
+  margin-top:20px;
+  padding:14px 30px;
+
+  border-radius:50px;
+
+  background:white;
+  color:black;
+
+  text-decoration:none;
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+.open-btn:hover,
+.flower-btn:hover{
+  transform:scale(1.05);
+}
+
+/* MESSAGE PAGE */
+.message-page{
+  min-height:100vh;
+
+  background:#111;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:80px 20px;
+}
+
+/* FLOWER PAGE */
+.flower-page{
+  min-height:100vh;
+
+  background:black;
+
+  position:relative;
+
+  overflow:hidden;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* FLOWER TITLE */
+.flower-title{
+  position:absolute;
+  top:50px;
+
+  font-size:2.5rem;
+
+  z-index:5;
+}
