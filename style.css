@@ -138,5 +138,45 @@ body{
   .message-box{
     padding:22px;
   }
+/* SCROLL SMOOTH */
+html{
+  scroll-behavior:smooth;
+}
 
+/* OPEN BUTTON */
+.open-btn{
+  display:inline-block;
+
+  margin-top:10px;
+  padding:14px 30px;
+
+  border-radius:50px;
+
+  background:white;
+  color:black;
+
+  text-decoration:none;
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+.open-btn:hover{
+  transform:scale(1.05);
+}
+
+/* MESSAGE PAGE */
+.message-page{
+  min-height:100vh;
+
+  background:#111;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:80px 20px;
+
+  position:relative;
+}
 }
